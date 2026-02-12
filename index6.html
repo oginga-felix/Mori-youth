@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | Mori SDA Youth Choir</title>
+</head>
+<body>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(235, 233, 238);
+}
+
+/* Navbar container */
+.navbar {
+    position: fixed;       /* makes it immovable */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f00cb7f1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    z-index: 1000;
+}
+
+    /* Logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Logo image */
+.logo-img {
+    height: 90px;   /* adjust if needed */
+    width: auto;
+}
+
+/* Logo text */
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Responsive logo */
+@media (max-width: 600px) {
+    .logo-img {
+        height: 32px;
+    }
+
+    .logo-text {
+        font-size: 15px;
+    }
+}
+
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 15px;
+    margin-right: 19px;
+}
+
+.nav-links button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.nav-links button:hover {
+    text-decoration: underline;
+}
+
+/* Page content (to avoid hiding under navbar) */
+.content {
+    padding: 100px 20px;
+}
+
+footer {
+       background: #0ef506;
+        color: #e60e0e;
+        text-align: center;
+        padding: 20px;
+    }
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+footer {
+  animation: blink 4s infinite;
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  20% {
+    transform: scale(1.1);
+  }
+
+  40% {
+    transform: scale(0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+
+  80% {
+    transform: scale(0.97);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#helo {
+  animation: bounceIn 12s infinite;
+}
+    </style>
+<nav class="navbar">
+    <div class="logo-container">
+    <img src="logo.jpg" alt="Mori SDA Youth Choir Logo" class="logo-img">
+    <span class="logo-text">Mori SDA Youth Choir</span>
+</div>
+    <ul class="nav-links">
+        <li><button onclick="goToPage('index.html')">Home</button></li>
+        <li><button onclick="goToPage('index2.html')">About</button></li>
+        <li><button onclick="goToPage('index3.html')">Beliefs</button></li>
+        <li><button onclick="goToPage('index4.html')">Ministry</button></li>
+        <li><button onclick="goToPage('index5.html')">Events</button></li>
+        <li><button onclick="goToPage('index6.html')">Contact</button></li>
+    </ul>
+</nav>
+<br><br><br><br><br><br><br>
+<h1>Contact Mori SDA Youth Choir</h1>
+
+<section>
+    <p>
+        We welcome visitors, new members, and anyone interested in worshiping with us through music.
+        Please reach out using the information below.
+    </p>
+</section>
+
+<section>
+    <h2>Location</h2>
+    <p>
+        Mori Seventh-day Adventist Church<br>
+        Sabbath Services: Saturday<br>
+        Sabbath School: 9:00 AM<br>
+        Divine Service: 11:00 AM
+    </p>
+</section>
+
+<section>
+    <h2>Contact Information</h2>
+    <p>
+        Email: morisdayoutchoir@example.com<br>
+        Phone: +254 799 958 950 <br>
+               +254 791 345 477<br>
+               +254 706 032 372 <br>
+    </p><br>
+     director whatsapp: <a href="https://chat.whatsapp.com/+254 791 345 477"
+target="_blank"
+   rel="noopener noreferrer">
+  director & trainer
+</a><br>
+    
+
+
+     secretary whatapp: <a href="https://chat.whatsapp.com/+254 799 958 950"
+         target="_blank"
+   rel="noopener noreferrer">
+   secretary & asistance trainer
+</a><br>
+
+
+
+    chairperson whatapp: <a href="https://chat.whatsapp.com/+254 706 032 372"
+         target="_blank"
+   rel="noopener noreferrer">
+   chairperson
+</a><br>
+    whatapp friends group: <a href="https://chat.whatsapp.com/FPRrLJEimadIgHpL9myS9f"
+   target="_blank"
+   rel="noopener noreferrer">
+   Share Choir Rules Document
+</a>
+
+    </p>
+</section>
+<footer>
+    <p>&copy; 2026 Mori SDA Youth Choir. All Rights Reserved.</p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

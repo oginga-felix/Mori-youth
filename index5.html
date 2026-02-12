@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+     background-color: rgb(244, 243, 248);
+}
+
+/* Navbar container */
+.navbar {
+    position: fixed;       /* makes it immovable */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ee0886;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    z-index: 1000;
+}
+
+    /* Logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Logo image */
+.logo-img {
+    height: 90px;   /* adjust if needed */
+    width: auto;
+}
+
+/* Logo text */
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Responsive logo */
+@media (max-width: 600px) {
+    .logo-img {
+        height: 32px;
+    }
+
+    .logo-text {
+        font-size: 15px;
+    }
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 15px;
+    margin-right: 19px;
+}
+
+.nav-links button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.nav-links button:hover {
+    text-decoration: underline;
+}
+
+/* Page content (to avoid hiding under navbar) */
+.content {
+    padding: 100px 20px;
+}
+
+footer {
+        background: #0ef506;
+        color: #e60e0e;
+        text-align: center;
+        padding: 20px;
+    }
+    @keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+footer {
+  animation: blink 4s infinite;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  20% {
+    transform: scale(1.1);
+  }
+
+  40% {
+    transform: scale(0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+
+  80% {
+    transform: scale(0.97);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#helo {
+  animation: bounceIn 12s infinite;
+}
+    </style>
+    <meta charset="UTF-8">
+    <title>Events | Mori SDA Youth Choir</title>
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo-container">
+    <img src="logo.jpg" alt="Mori SDA Youth Choir Logo" class="logo-img">
+    <span class="logo-text">Mori SDA Youth Choir</span>
+</div>
+    <ul class="nav-links">
+        <li><button onclick="goToPage('index.html')">Home</button></li>
+        <li><button onclick="goToPage('index2.html')">About</button></li>
+        <li><button onclick="goToPage('index3.html')">Beliefs</button></li>
+        <li><button onclick="goToPage('index4.html')">Ministry</button></li>
+        <li><button onclick="goToPage('index5.html')">Events</button></li>
+        <li><button onclick="goToPage('index6.html')">Contact</button></li>
+    </ul>
+</nav><br><br><br>
+<h1>Events & Programs</h1>
+
+<section>
+    <p>
+        Our calendar includes worship services, youth rallies, music concerts, and evangelistic meetings.
+        Members and visitors are encouraged to participate and worship with us.
+    </p>
+</section>
+
+<section>
+    <h2>Regular Events</h2>
+    <ul>
+    
+        <li>Sabbath Worship Services</li>
+        <li>Youth Sabbath Programs</li>
+        <li>Choir Practice Sessions</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Special Programs</h2>
+    <p>
+        From time to time, the choir hosts special musical programs aimed at revival,
+        thanksgiving,charity work,Attends camp meetings and evangelism.
+    </p>
+</section><br><br><br><br><br><br>
+<footer>
+    <p>&copy; 2026 Mori SDA Youth Choir. All Rights Reserved.</p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

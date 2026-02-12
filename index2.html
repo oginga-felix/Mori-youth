@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About | Mori Youth Choir</title>
+
+<style>
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+     background-color: rgb(246, 244, 248);
+}
+
+/* Navbar container */
+.navbar {
+    position: fixed;       /* makes it immovable */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f309cc;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    z-index: 1000;
+}
+
+    /* Logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Logo image */
+.logo-img {
+    height: 90px;   /* adjust if needed */
+    width: auto;
+}
+
+/* Logo text */
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Responsive logo */
+@media (max-width: 600px) {
+    .logo-img {
+        height: 32px;
+    }
+
+    .logo-text {
+        font-size: 15px;
+    }
+}
+
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 15px;
+    margin-right: 19px;
+}
+
+.nav-links button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.nav-links button:hover {
+    text-decoration: underline;
+}
+
+/* Page content (to avoid hiding under navbar) */
+.content {
+    padding: 100px 20px;
+}
+
+footer {
+        background: #0ef506;
+        color: #e60e0e;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header {
+        background: #2a5298;
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .content {
+        max-width: 900px;
+        margin: auto;
+        padding: 40px 20px;
+        line-height: 1.8;
+    }
+
+    h2 {
+        color: #3ffa05;
+    }
+
+    @keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+footer {
+  animation: blink 4s infinite;
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  20% {
+    transform: scale(1.1);
+  }
+
+  40% {
+    transform: scale(0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+
+  80% {
+    transform: scale(0.97);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#helo {
+  animation: bounceIn 12s infinite;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+   <div class="logo-container">
+    <img src="logo.jpg" alt="Mori SDA Youth Choir Logo" class="logo-img">
+    <span class="logo-text">Mori SDA Youth Choir</span>
+</div>
+    <ul class="nav-links">
+        <li><button onclick="goToPage('index.html')">Home</button></li>
+        <li><button onclick="goToPage('index2.html')">About</button></li>
+        <li><button onclick="goToPage('index3.html')">Beliefs</button></li>
+        <li><button onclick="goToPage('index4.html')">Ministry</button></li>
+        <li><button onclick="goToPage('index5.html')">Events</button></li>
+        <li><button onclick="goToPage('index6.html')">Contact</button></li>
+    </ul>
+</nav>
+<br><br><br><br>
+<header>
+    <h1>About Mori Youth Choir</h1>
+</header>
+
+<div class="content">
+
+    <h2 id="helo">Our Beginning</h2>
+    <p>
+        Mori Youth Choir is a Seventh-day Adventist youth choir that came into existence in early 2024 at Mori SDA Church,
+        located in Ranen conference,west-kenya Union Mori Village, North-Kanyamkago Ward, Uriri Constituency, Migori County.
+    </p>
+
+    <h2 id="helo">Mission & Purpose</h2>
+    <p>
+        The choir exists to glorify God through music ministry, inspire worship, and spread the gospel message
+        using sacred and meaningful songs rooted in Adventist beliefs.
+    </p>
+
+    <h2 id="helo">Activities</h2>
+    <p>
+        The choir takes part in Sabbath services, evangelistic meetings, youth conventions, music festivals,
+        and community outreach programs. Rehearsals emphasize discipline, unity, and spiritual growth.
+    </p>
+
+    <h2>Vision</h2>
+    <p>
+        Our vision is to nurture talented youth, strengthen faith through music, and positively impact both
+        church and society through Christ-centered harmony.
+    </p>
+
+</div>
+<footer>
+    <p>&copy; 2026 Mori SDA Youth Choir. All Rights Reserved.</p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
